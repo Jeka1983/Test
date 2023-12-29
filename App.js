@@ -11,9 +11,9 @@ const App = () => {
   return (
     <View style = {styles.container}>
       <View style = {styles.inscription}>
-        <Text style = {styles.text}>Введіть ім'я</Text>
+        <Text style = {styles.text}>Згенеруйте список</Text>
       </View>
-      <View style = {styles.inscription}>
+      <View style = {styles.button}>
       <Button title='OK'/> 
       </View>    
     </View>
@@ -21,22 +21,20 @@ const App = () => {
 }
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 1,
     backgroundColor: '#ff0',
     alignItems: 'center',
     justifyContent: 'center'
   },
   inscription: {
-    flex: 0,
-    flexDirection: 'row'
+    flex: 1,
+    //flexDirection: 'row'
   },
-  input: {
+  button: {
+    flex: 1,
     height: '10%',
     width: '40%',
-    margin: 120,
-    borderWidth: 2,
-    padding: 10,
-    color: 'black'
+    //flexDirection: 'row'
   },
   text: {
     marginTop: 1,
